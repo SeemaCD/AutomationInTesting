@@ -5,17 +5,17 @@ import static io.restassured.RestAssured.given;
 import api.endpoints.ResourcePath;
 import io.restassured.response.Response;
 
-public class GetRoomDetails {
+public class DeleteQuery {
 	static Response response;
-	public static Response getResponseForGetCall(String dataForBooking)
+	public static Response getResponseForDeleteCall(String dataForBooking)
 	{
 	 try {
 		response = 
 				    given()
 				    .baseUri(ResourcePath.basePath)
-				    .basePath(ResourcePath.bookingPath)
+				    .basePath(ResourcePath.deletePath)
 				    .when()
-				    .get()
+				    .delete()
 				    .then()
 				    .extract().response();
 	} catch (Exception e) {
