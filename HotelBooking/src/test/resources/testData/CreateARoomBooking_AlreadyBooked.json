@@ -1,0 +1,12 @@
+{
+    "bookingdates": {
+        "checkin": "2023-05-07",
+        "checkout": "2023-05-10"
+    },
+    "depositpaid": false,
+    "firstname": "savalas",
+    "lastname": "pillay",
+    "roomid": 2001,
+    "email": "A@B.com",
+    "phone": "85521451055"
+}
